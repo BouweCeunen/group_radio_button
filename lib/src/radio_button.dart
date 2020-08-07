@@ -39,6 +39,7 @@ class RadioButton<T> extends StatelessWidget {
                   )
                 : Container(),
             Radio<T>(
+              key: Key(this.value.toString()),
               groupValue: groupValue,
               onChanged: this.onChanged,
               value: this.value,
@@ -49,6 +50,7 @@ class RadioButton<T> extends StatelessWidget {
                     child: Text(
                       this.description,
                       textAlign: TextAlign.right,
+                      style: TextStyle(fontSize: 17),
                     ),
                   )
                 : Container(),
